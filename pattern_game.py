@@ -73,7 +73,7 @@ def draw_screen(pattern, drag_blocks, message=None, message_color=(0, 150, 0)):
 
     if message:
         msg = font_large.render(message, True, message_color)
-        screen.blit(msg, (WIDTH // 2 - msg.get_width() // 2, HEIGHT - 100))
+        screen.blit(msg, (WIDTH // 2 - msg.get_width() // 2, BOTTOM_MARGIN - 60))
 
     pygame.display.flip()
 
